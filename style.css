@@ -1,0 +1,106 @@
+/* Cấu hình chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #0056b3;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 5px;
+}
+
+/* ==========================================
+   MỤC 2: Kiểu đánh dấu dấu hình vuông (Square)
+   ========================================== */
+.list-square {
+    list-style-type: square;
+}
+
+/* ==========================================
+   MỤC 3: Số La Mã viết hoa (Upper Roman)
+   ========================================== */
+.list-roman {
+    list-style-type: upper-roman;
+}
+
+/* ==========================================
+   MỤC 4: Hình ảnh làm dấu đánh dấu
+   ========================================== */
+.list-image {
+    /* Đảm bảo bạn có file ảnh icon.png kích thước nhỏ (khoảng 16x16px) nằm cùng thư mục */
+    list-style-image: url('icon.png');
+}
+
+/* ==========================================
+   MỤC 5: So sánh vị trí Outside và Inside
+   ========================================== */
+.position-outside {
+    list-style-position: outside;
+    background-color: #eef2f5;
+    padding-left: 30px;
+}
+
+.position-inside {
+    list-style-position: inside;
+    background-color: #eef2f5;
+    padding-left: 30px;
+}
+
+/* ==========================================
+   MỤC 6: Thuộc tính rút gọn list-style
+   Cú pháp: list-style: [type] [position] [image];
+   ========================================== */
+.list-shorthand {
+    list-style: square inside;
+}
+
+/* ==========================================
+   MỤC 7: Định kiểu màu sắc & khoảng cách
+   ========================================== */
+.list-styled-color {
+    background-color: #e3f2fd; /* Màu nền cho toàn bộ danh sách */
+    padding: 20px 40px;        /* Khoảng cách đệm bên trong */
+    border-radius: 5px;
+    list-style-type: disc;
+}
+
+.list-styled-color li {
+    color: #0d47a1;            /* Màu chữ của các mục */
+    margin-bottom: 10px;       /* Khoảng cách giữa các mục */
+    font-weight: bold;
+}
+
+/* ==========================================
+   MỤC 8: Bài tập tổng hợp
+   ========================================== */
+.roadmap-list {
+    /* Thuộc tính rút gọn list-style */
+    list-style: decimal inside;
+    
+    /* Màu nền & Khoảng cách cho danh sách */
+    background-color: #263238;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.roadmap-list li {
+    color: #eceff1;            /* Màu chữ */
+    background-color: #37474f; /* Màu nền từng mục */
+    margin: 8px 0;             /* Khoảng cách giữa các mục */
+    padding: 10px 15px;        /* Khoảng cách đệm bên trong mục */
+    border-radius: 4px;
+    border-left: 4px solid #00bcd4; /* Viền trang trí bên trái */
+}
